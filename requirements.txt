@@ -1,0 +1,8 @@
+faster-whisper>=1.0,<2
+edge-tts>=6.1
+srt>=3.5
+yt-dlp  # téléchargement YouTube (peut aussi être un binaire système)
+
+# Note : si "TypeError: open() got an unexpected keyword argument
+# 'metadata_errors'" apparaît à la transcription, il y a un conflit de
+# versions entre av et faster-whisper : pip install "av<15"
